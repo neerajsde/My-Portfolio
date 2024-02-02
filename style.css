@@ -104,6 +104,9 @@
     font-weight: bold;
     transition: all 3s;
 }
+#home-btn{
+    display: none;
+}
 .hero-section{
     position: relative;
     display: flex;
@@ -602,18 +605,279 @@
     transform: translateY(-10px);
 }
 
+
+nav .fa-xmark, nav .fa-bars{
+    display: none;
+}
+@media (max-width: 800px){
+    #home-btn{
+        display: block;
+    }
+    nav .fa-xmark, nav .fa-bars{
+        display: block;
+        cursor: pointer;
+    }
+    nav .fa-xmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1rem;
+        color: white;
+        font-size: 25px;
+    }
+    nav .fa-xmark:hover{
+        color: #333;
+    }
+    nav .fa-bars{
+        padding-right: 1rem;
+        font-size: 28px;
+        z-index: 12;
+    }
+    nav .fa-bars:hover{
+        color: var(--bgOrange);
+    }
+    .nav-items{
+        flex-direction: column;
+        background-color: var(--bgOrange);
+        position: absolute;
+        top: 0;
+        width: 200px;
+        height: 100vh;
+        right: -200px;
+        z-index: 13;
+        gap: 0;
+        padding: 3rem 2.5rem;
+        /* position: fixed; */
+        transition: right 0.5s;
+    }
+    .nav-items a{
+        padding: 1rem 0;
+        width: 100%;
+        font-size: 20px;
+        color: #333;
+    }
+    .nav-items a:hover{
+        color: #fff;
+    }
+    .hero-section{
+        flex-wrap: wrap-reverse;
+        gap: 5rem;
+    }
+    .socil-links i{
+        font-size: 20px;
+    }
+    .hero-section-right{
+        width: 40%;
+        margin-top: -2rem;
+    }
+    .user-image img{
+        width: 100%;
+    }
+    .user-image{
+        padding:2rem;
+    }
+    .icons img{
+        width: 60%;
+    }
+    .icon-dots{
+        bottom: -1rem;
+        right: -3rem;
+    }
+    .icon-zigzag{
+        left: -1rem;
+    }
+    .icon-cube{
+        right: -1rem;
+    }
+    .hero-section-heading{
+        font-size: 28px;
+    }
+    .hero-section-sub-heading{
+        font-size: 35px;
+    }
+    .hero-section-description{
+        font-size: 18px;
+        text-align: justify;
+        margin-top: 0;
+        width: 100%;
+    }
+    .faded-text{
+        font-size: 70px;
+        bottom: -5rem;
+        left: 0;
+    }
+    .page-header{
+        font-size: 4rem;
+    }
+    
+    #project2{
+        left: 0%;
+    }
+    #project4{
+        left: 0%;
+    }
+    .project-container{
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 3rem;
+        gap: 80px;
+    }
+    .project-card{
+        width: 100%;
+    }
+    .project-card{
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .project-number{
+        font-size: 90px;
+        font-weight: 500;
+    }
+    .project-number-left{
+        top:-2rem;
+        right: -1rem;
+    }
+    .project-number-right{
+        top: -2rem;
+        left: -1rem;
+    }
+    .project-content-right{
+        margin-left: 20%;
+    }
+    .project-heading{
+        font-size:35px;
+        line-height:2rem;
+    }
+      
+    .project-subHeading{
+        font-size:18px;
+    }
+    
+    .btn-grp button{
+        font-size: 20px;
+    }
+    .icon{
+        font-size:35px;
+    }
+    .skill-section{
+        flex-direction: column;
+        padding: 1rem;
+        margin: 2rem 4rem;
+        gap: 4rem;
+    }
+    .skill-section-left{
+        width:100%;
+    }
+    .skill-subHeading{
+        margin-top: 1rem;
+        width:100%;
+        text-align: justify;
+    }
+    
+    .skill-subHeading p{
+        font-size: 17px;
+    }
+    .skill-heading{        
+        margin-top: 4rem;
+        font-size:40px;
+        line-height: 40px;
+    }
+    .skill-heading .caps{
+        font-size: 70px;
+    }
+    .skill-section-right{
+        width:100%;
+        gap:2rem;
+    }
+    .blob-style{
+        transform:translate(-50%, -50%) scale(0.5);
+    }
+    .skills-logo{
+        width:50px;
+    }
+    .skill-fade-text{
+        font-size: 4rem;
+        bottom: -3rem;
+        right: -4rem;
+    }
+    .contact-us-section{
+        width: 100%;
+        background-color: rgb(231, 231, 231);
+        padding: 2rem;
+    }
+    .contact-heading{
+        padding-top: 4rem;
+        font-size: 4rem;
+    }
+    .contact-sub-heading{
+        font-size: 1.8rem;
+    }
+    .input-form{
+        margin: 0;
+        margin-top: 2rem;
+        margin-left: 3rem;
+        padding-left: 0;
+    }
+    .input-form input, textarea{
+        width: 100%;
+        font-size: 20px;
+        padding: 3% 5%;
+    }
+    .submit-btn{
+        font-size: 18px;
+        padding: 1rem 2rem;
+    }
+    .footer-section{
+        width: 100%;
+        height: 250px;
+        bottom: 0;
+        position: relative;
+    }
+    .fadded-text{
+        position: absolute;
+        bottom: 0;
+        left: 40%;
+        font-size: 2.5rem;
+        z-index: -1;
+    }
+    .links{
+        display: block;
+        padding: 2rem 5rem;
+    }
+    .sections-links{
+        color: #fff;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s;
+    }
+    .sections-links a{
+        font-size: 18px;
+        padding: 8px 0;
+    }
+    .sections-links a:hover{
+        transform: translateX(5px);
+    }
+    .sections-links .fa-solid{
+        display: inline-block;
+    }
+    .social-links{
+        display: none;
+    }
+}
+
+
 @media (max-width:500px){
     .logo img{
         width: 100px;
     }
     .navbar{
+        height: 60px;
         padding: 0.5rem 1rem;
     }
-    .nav-items{
-        display: none;
-    }
     .hero-section{
-        flex-wrap: wrap-reverse;
         gap: 2rem;
     }
     .icons img{
@@ -646,16 +910,6 @@
     .user-image img{
         width: 100%;
     }
-    .icon-dots{
-        bottom: -1rem;
-        right: -3rem;
-    }
-    .icon-zigzag{
-        left: -1rem;
-    }
-    .icon-cube{
-        right: -1rem;
-    }
     .hero-section{
         padding: 0 2rem;
     }
@@ -670,7 +924,6 @@
     }
     .hero-section-description{
         font-size: 12px;
-        text-align: justify;
         margin-top: 0;
         width: 100%;
     }
@@ -682,12 +935,14 @@
     /* project */
     .page-header{
         font-size: 2rem;
+        padding: 0;
+        margin: 0;
     }
     .project-container{
         max-width: 90%;
         margin: 0 auto;
         padding: 3rem 0;
-        gap: 90px;
+        gap: 50px;
     }
     .project-card{
         width: 100%;
@@ -730,12 +985,6 @@
     .icon{
         font-size:20px;
     }
-    #project2{
-        left: 0%;
-    }
-    #project4{
-        left: 0%;
-    }
     .project-number-left{
         top: -30px;
         right: -15px;
@@ -746,23 +995,19 @@
     }
     /* skills section  */
     .skill-section{
-        flex-direction: column;
         padding: 1rem;
         margin: 2rem 0;
-    }
-    .skill-section-left{
-        width:100%;
     }
     .skill-subHeading{
         margin-top: 1rem;
         width:100%;
-        text-align: justify;
     }
     
     .skill-subHeading p{
         font-size: 12px;
     }
-    .skill-heading{
+    .skill-heading{        
+        margin-top: 4rem;
         font-size:25px;
         line-height: 20px;
     }
@@ -772,9 +1017,6 @@
     .skill-section-right{
         width:100%;
         gap:1rem;
-    }
-    .blob-style{
-        transform:translate(-50%, -50%) scale(0.5);
     }
     .skills-logo{
         width:35px;
@@ -790,6 +1032,7 @@
         padding: 2rem;
     }
     .contact-heading{
+        padding-top: 2rem;
         font-size: 2rem;
     }
     .contact-sub-heading{
@@ -815,40 +1058,20 @@
         width: 100%;
         height: 200px;
         bottom: 0;
-        background-color: #343d68;
-        position: relative;
-        z-index: 2;
     }
     .fadded-text{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        color: rgb(173, 152, 249);
+        left: 0.5rem;
         font-size: 1.8rem;
-        z-index: -1;
     }
     .links{
-        display: block;
         padding: 1rem;
     }
     .sections-links{
         color: #fff;
         padding: 0;
-        display: flex;
-        flex-direction: column;
-        transition: all 0.3s;
     }
     .sections-links a{
         font-size: 13px;
         padding: 5px 0;
-    }
-    .sections-links .fa-solid{
-        display: inline-block;
-    }
-    .sections-links:hover a{
-        transform: translateX(20px);
-    }
-    .social-links{
-        display: none;
     }
 }
