@@ -578,6 +578,9 @@
     justify-content: space-between;
     padding: 5rem;
 }
+.sections-links .fa-solid{
+    display: none;
+}
 .sections-links a{
     color: #fff;
     padding: 0.5rem;
@@ -745,6 +748,7 @@
     .skill-section{
         flex-direction: column;
         padding: 1rem;
+        margin: 2rem 0;
     }
     .skill-section-left{
         width:100%;
@@ -776,6 +780,75 @@
         width:35px;
     }
     .skill-fade-text{
-        font-size: 4rem;
+        font-size: 2rem;
+        bottom: -2.5rem;
+    }
+    /* contact - us section  */
+    .contact-us-section{
+        width: 100%;
+        background-color: rgb(231, 231, 231);
+        padding: 2rem;
+    }
+    .contact-heading{
+        font-size: 2rem;
+    }
+    .contact-sub-heading{
+        font-size: 0.8rem;
+    }
+    .input-form{
+        margin: 0;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        padding-left: 0;
+    }
+    .input-form input, textarea{
+        width: 100%;
+        font-size: 15px;
+        padding: 4% 5%;
+    }
+    .submit-btn{
+        font-size: 15px;
+        padding: 0.8rem 1.8rem;
+    }
+    /* footer  */
+    .footer-section{
+        width: 100%;
+        height: 200px;
+        bottom: 0;
+        background-color: #343d68;
+        position: relative;
+        z-index: 2;
+    }
+    .fadded-text{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: rgb(173, 152, 249);
+        font-size: 1.8rem;
+        z-index: -1;
+    }
+    .links{
+        display: block;
+        padding: 1rem;
+    }
+    .sections-links{
+        color: #fff;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        transition: all 0.3s;
+    }
+    .sections-links a{
+        font-size: 13px;
+        padding: 5px 0;
+    }
+    .sections-links .fa-solid{
+        display: inline-block;
+    }
+    .sections-links:hover a{
+        transform: translateX(20px);
+    }
+    .social-links{
+        display: none;
     }
 }
