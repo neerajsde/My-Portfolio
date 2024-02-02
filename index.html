@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="pageloader"></div>
     <div id="wraper">
       <div class="social-media-link">
         <div class="socil-links">
@@ -329,12 +330,16 @@
           <div class="skill-section-right">
             <img src="./images/userAsset/blob vector.png" alt="" class="blob-style">
 
+            <img src="./images/stack/c++_logo.svg" alt="" class="skills-logo" />
+            <img src="./images/stack/Python.webp" alt="" class="skills-logo" />
+            <img src="./images/stack/java.webp" alt="" class="skills-logo" />
             <img src="./images/stack/HTML.png" alt="" class="skills-logo" />
             <img src="./images/stack/CSS.png" alt="" class="skills-logo" />
             <img src="./images/stack/Javascript.svg" alt="" class="skills-logo" />
             <img src="./images/stack/React.png" alt="" class="skills-logo" />
             <img src="./images/stack/NodeJs.svg" alt="" class="skills-logo" />
             <img src="./images/stack/Next.svg" alt="" class="skills-logo" />
+            <img src="./images/stack/MySQL.svg" alt="" class="skills-logo" >
             <img src="./images/stack/Redux.svg" alt="" class="skills-logo" />
             <img src="./images/stack/Tailwind.png" alt="" class="skills-logo" />
             <img src="./images/stack/Bootstrap.svg" alt="" class="skills-logo" />
@@ -349,6 +354,7 @@
             <img src="./images/stack/Bash.svg" alt="" class="skills-logo" />
             <img src="./images/stack/Docker.svg" alt="" class="skills-logo" />
             <img src="./images/stack/K8s.svg" alt="" class="skills-logo" />
+            <img src="./images/stack/leetcode.webp" alt="" class="skills-logo" />
           </div>
         </div>
         <!-- contact us section  -->
@@ -419,6 +425,10 @@
       function closemenu(){
         sidemenu.style.right = "-200px";
       }
+      var loader = document.getElementById("pageloader");
+      window.addEventListener("load", function(){
+        loader.style.display = "none";
+      })
     </script>
   </body>
 </html>

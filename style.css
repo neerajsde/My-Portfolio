@@ -10,6 +10,9 @@
     --bgOrange: #e84949;
     --bgOrange: #4a85a3;
 }
+body{
+    position: relative;
+}
 #wraper{
     height: 100vh;
     overflow-x: hidden;
@@ -125,6 +128,7 @@
     gap: 2rem;
     margin-left: 5rem;
 }.hero-section-heading{
+    user-select: none;
     font-size: 35px;
     color: #343d68;
     font-weight: 500;
@@ -1076,4 +1080,17 @@ nav .fa-xmark, nav .fa-bars{
         font-size: 13px;
         padding: 5px 0;
     }
+}
+
+/* page loader */
+#pageloader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(7px);
+    background: #2222 url(./images/Preloder/loader.gif) no-repeat center center;
+    position: fixed;
+    z-index: 20;
 }
