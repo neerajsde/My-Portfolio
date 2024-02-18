@@ -408,7 +408,7 @@ body{
 }
   
 .project-subHeading{
-    width:70%;
+    width:50%;
     font-size:16px;
     font-style: italic;
 }
@@ -455,6 +455,12 @@ body{
     background: url(./images/projects/Project4.png);
     background-size: cover;
     left: 10%;
+}
+#project2 .project-content{
+    margin-left: 30%;
+}
+#project2 .project-content .project-subHeading{
+    width: 100%;
 }
 
 /* skills section  */
