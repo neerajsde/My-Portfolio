@@ -10,6 +10,19 @@
     --bgOrange: #e84949;
     --bgOrange: #4a85a3;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(255, 255, 255, 0.183);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--bgOrange);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-button{
+    background-color: var(--bgOrange);
+}
 body{
     position: relative;
 }
