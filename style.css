@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 :root{
     --bgOrange: #e84949;
@@ -375,11 +376,11 @@ body{
     opacity: 0;
 }
 .project-number-left{
-    top: -45px;
+    top: -80px;
     right: -40px;
 }
 .project-number-right{
-    top: -45px;
+    top: -80px;
     left: -40px;
 }
 .project-card:hover .project-number{
@@ -1108,23 +1109,38 @@ nav .fa-xmark, nav .fa-bars{
         font-size: 13px;
         padding: 5px 0;
     }
+    ::-webkit-scrollbar{
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: rgba(255, 255, 255, 0.183);
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: var(--bgOrange);
+        border-radius: 50px;
+    }
 }
 
 /* page loader */
 #pageloader{
-    position: absolute;
-    top: 15rem;
-    left: 40rem;
+    position: fixed; /* Use fixed instead of absolute for centering in the viewport */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 300px;
     height: 300px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-color: #5555;
+    background-color: #2222;
     backdrop-filter: blur(10px);
     border-radius: 10px;
     z-index: 20;
 }
 #pageloader img{
     width: 250px;
+}
+#pageloader h2{
+    color: var(--bgOrange);
+    font-size: 1.5rem;
 }
