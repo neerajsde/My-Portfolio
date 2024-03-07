@@ -457,20 +457,24 @@ body{
 #project1{
     background: url(./images/projects/Project1.png);
     background-size: cover;
+    background-position: center;
 }
 #project2{
     background: url(./images/projects/Project2.png);
     background-size: cover;
     left: 10%;
+    background-position: center;
 }
 #project3{
     background: url(./images/projects/Project3.png);
     background-size: cover;
+    background-position: center;
 }
 #project4{
     background: url(./images/projects/Project4.png);
     background-size: cover;
     left: 10%;
+    background-position: center;
 }
 #project2 .project-content{
     margin-left: 30%;
