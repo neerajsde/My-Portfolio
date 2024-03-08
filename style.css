@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 *{
     margin: 0;
@@ -8,17 +7,27 @@
     font-family: "Nunito", sans-serif;
 }
 :root{
-    --bgOrange: #e84949;
-    --bgOrange: #4a85a3;
+    --bgWhite: #fff;
+    --bgSkyBlue: #4a85a3;
+    --text-white: #fff;
+    --text-black: #000;
+    --txt-faided: rgb(231,231,231);
+    --txt-light-blue: #2b617b;
+    --txt-color-2: #343d68;
+    --bg-color-2: #343d68;
+    --input-bg: #fff;
+    --input-text: #000;
+    --input-text-ph: #444;
+    --sidebar-bg: rgba(255, 255, 255, 0.183);
 }
 ::-webkit-scrollbar{
     width: 10px;
 }
 ::-webkit-scrollbar-track{
-    background-color: rgba(255, 255, 255, 0.183);
+    background-color: var(--sidebar-bg);
 }
 ::-webkit-scrollbar-thumb{
-    background-color: var(--bgOrange);
+    background-color: var(--bgSkyBlue);
     border-radius: 50px;
 }
 body{
@@ -33,6 +42,7 @@ body{
 .container{
     width: 100vw;
     margin: 0 auto;
+    background-color: var(--bgWhite);
 }
 
 /* social-media-link */
@@ -56,15 +66,15 @@ body{
 .socil-links i{
     font-size: 30px;
     padding: 0.5rem;
-    color: #fff;
-    background-color: var(--bgOrange);
-    border: 3px solid var(--bgOrange);
+    color: var(--text-white);
+    background-color: var(--bgSkyBlue);
+    border: 3px solid var(--bgSkyBlue);
     border-radius: 50%;
     transition: all 0.7s;
 }
 .socil-links i:hover{
-    color: var(--bgOrange);
-    border: 3px solid var(--bgOrange);
+    color: var(--bgSkyBlue);
+    border: 3px solid var(--bgSkyBlue);
     background: none;
 }
 
@@ -99,11 +109,28 @@ body{
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
-    color: black;
+    color: var(--text-black);
 }
 .nav-items a:hover{
     transition:0.4s;
-    color: var(--bgOrange)
+    color: var(--bgSkyBlue);
+}
+.dark-mode{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: var(--text-black);
+}
+.dark-mode p{
+    font-weight: 500;
+    font-size: 20px;
+}
+.dark-mode:hover p, img{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--bgSkyBlue);
 }
 
 /* hero section  */
@@ -111,9 +138,8 @@ body{
     position:absolute;
     user-select:none;
     font-size: 6em;
-    color:rgb(231,231,231);
-    
-    bottom: -14.3%;
+    color:var(--txt-faided);
+    bottom: -17%;
     left: 2rem;
     font-weight: bold;
     transition: all 3s;
@@ -138,16 +164,16 @@ body{
     justify-content:center;
     gap: 2rem;
     margin-left: 5rem;
-}.hero-section-heading{
+}
+.hero-section-heading{
     user-select: none;
     font-size: 35px;
-    color: #343d68;
+    color: var(--txt-color-2);
     font-weight: 500;
 }
 
 .role{
-    color: var(--bgOrange);
-    /* color: #59AEB3; */
+    color: var(--bgSkyBlue);
     font-weight: 800;
 }
 
@@ -157,14 +183,15 @@ body{
 }
 
 .hero-section-description{
+    color: var(--text-black);
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
 }
 .btn-pink{
-    background-color: var(--bgOrange);
+    background-color: var(--bgSkyBlue);
     width: fit-content;
-    color: white;
+    color: var(--text-white);
     padding: 0.8rem 2.3rem;
     box-shadow: 5px 5px 7px 0px #0000003f;
     font-size: 18px;
@@ -179,7 +206,7 @@ body{
 .btn-pink::before {
     content: "";
     position: absolute;
-    background-color: #fff;
+    background-color: var(--bgWhite);
     top: 0px;
     left: 0;
     right: 0;
@@ -193,8 +220,8 @@ body{
     transform: scaleX(1);
 }
 .btn-pink:hover {
-    border: solid 3px var(--bgOrange);
-    color: black;
+    border: solid 3px var(--bgSkyBlue);
+    color: var(--text-black);
 }
 
 .hero-section-right{
@@ -223,7 +250,7 @@ body{
     50%{
         transform: scale(1.1);
         filter: grayscale(1);
-        box-shadow: 3px 3px 10px black;
+        box-shadow: 3px 3px 10px var(--text-black);
     }
     100%{
         transform: scale(1);
@@ -313,14 +340,14 @@ body{
 
 /* Project section  */
 .project-section{
-    background-color: rgb(231, 231, 231);
+    background-color: var(--txt-faided);
     margin-top: 1rem;
     padding-top: 4rem;
 }
 .page-header{
     font-size: 90px;
     padding: 30px;
-    color: var(--bgOrange);
+    color: var(--bgSkyBlue);
     text-align: center;
 }
 .project-container{
@@ -372,7 +399,7 @@ body{
     z-index: 8;
     font-size: 200px;
     font-weight: 600;
-    color: white;
+    color: var(--text-white);
     opacity: 0;
 }
 .project-number-left{
@@ -390,7 +417,7 @@ body{
     position:absolute;
     display:flex;
     flex-direction:column;
-    color:white;
+    color:var(--text-white);
     padding:2em;
     bottom:20%;
     z-index:5;
@@ -444,12 +471,12 @@ body{
 }
 .icon{
     cursor:pointer;
-    color:white;
+    color:var(--text-white);
     font-size:35px;
     transition:all 0.4s;
 }
 .icon:hover{
-    color: var(--bgOrange);
+    color: var(--bgSkyBlue);
 }
 .project-card:hover .project-content{
     transform: scale(1.1);
@@ -501,12 +528,13 @@ body{
 }
   
 .skill-subHeading p{
+    color: var(--text-black);
     margin:15px 0;
 }
 .skill-heading{
     font-size:50px;
     font-weight: bold;
-    color: var(--bgOrange);
+    color: var(--bgSkyBlue);
     line-height: 50px;
 }
 .skill-heading .caps{
@@ -524,7 +552,7 @@ body{
     position:absolute;
     top:50%;
     left:50%;
-    z-index:-5;
+    z-index:0;
     transform:translate(-50%, -50%);
     animation: blobAnimate 3s linear infinite;
 }
@@ -538,6 +566,7 @@ body{
 .skills-logo{
     width:80px;
     transition:all 0.5s;
+    z-index: 2;
 }
   
 .skills-logo:hover{
@@ -548,8 +577,8 @@ body{
     font-size: 10rem;
     position: absolute;
     font-style:bold;
-    color:rgb(231,231,231);
-    bottom:-12rem;
+    color: var(--txt-faided);;
+    bottom: -14rem;
     right:0;
     user-select:none;
     overflow-y:hidden;
@@ -558,16 +587,16 @@ body{
 /* contact-us section  */
 .contact-us-section{
     width: 100%;
-    background-color: rgb(231, 231, 231);
+    background-color: var(--txt-faided);
     padding: 4rem 10rem;
 }
 .contact-heading{
     font-size: 3rem;
-    color: var(--bgOrange);
+    color: var(--bgSkyBlue);
 }
 .contact-sub-heading{
     font-size: 2rem;
-    color: #343d68aa;
+    color: var(--txt-color-2);
     text-transform: capitalize;
 }
 .input-form{
@@ -583,8 +612,13 @@ body{
     font-size: 18px;
     border: none;
     border-radius: 6px;
+    color: var(--input-text);
+    background-color: var(--input-bg);
     box-shadow: 3px 3px 10px gray;
     outline: none;
+}
+.input-form input::placeholder, textarea::placeholder{
+    color: var(--input-text-ph);
 }
 .submit-btn:hover{
     transform: scale(0.9);
@@ -594,7 +628,7 @@ body{
 .footer-section{
     width: 100%;
     height: 200px;
-    background-color: #343d68;
+    background-color: var(--bg-color-2);
     margin: 0;
     position: relative;
     z-index: 2;
@@ -602,7 +636,7 @@ body{
 .fadded-text{
     position: absolute;
     bottom: 0;
-    left: 5%;
+    left: 5rem;
     color: rgb(173, 152, 249);
     font-size: 4rem;
     z-index: -1;
@@ -616,28 +650,29 @@ body{
     display: none;
 }
 .sections-links a{
-    color: #fff;
+    color: var(--text-white);
     padding: 0.5rem;
     font-size: 18px;
     text-decoration: none;
     transition: all 0.3s;
 }
 .sections-links a:hover{
-    color: var(--bgOrange);
+    color: var(--bgSkyBlue);
 }
 .social-links .fa-brands, .social-links .fa-solid{
-    color: #fff;
+    color: var(--text-white);
     font-size: 30px;
     padding: 0 0.5rem;
     transition: 0.4s;
 }
 .social-links .fa-brands:hover, .social-links .fa-solid:hover{
-    color: var(--bgOrange);
+    color: var(--bgSkyBlue);
     transform: translateY(-10px);
 }
 
 
 nav .fa-xmark, nav .fa-bars{
+    color: var(--text-black);
     display: none;
 }
 @media (max-width: 800px){
@@ -653,7 +688,7 @@ nav .fa-xmark, nav .fa-bars{
         top: 0;
         left: 0;
         padding: 1rem;
-        color: white;
+        color: var(--text-white);
         font-size: 25px;
     }
     nav .fa-xmark:hover{
@@ -665,11 +700,11 @@ nav .fa-xmark, nav .fa-bars{
         z-index: 12;
     }
     nav .fa-bars:hover{
-        color: var(--bgOrange);
+        color: var(--bgSkyBlue);
     }
     .nav-items{
         flex-direction: column;
-        background-color: var(--bgOrange);
+        background-color: var(--bgSkyBlue);
         position: absolute;
         top: 0;
         width: 200px;
@@ -688,7 +723,7 @@ nav .fa-xmark, nav .fa-bars{
         color: #333;
     }
     .nav-items a:hover{
-        color: #fff;
+        color: var(--text-white);
     }
     .hero-section{
         flex-wrap: wrap-reverse;
@@ -835,7 +870,6 @@ nav .fa-xmark, nav .fa-bars{
     }
     .contact-us-section{
         width: 100%;
-        background-color: rgb(231, 231, 231);
         padding: 2rem;
     }
     .contact-heading{
@@ -879,7 +913,7 @@ nav .fa-xmark, nav .fa-bars{
         padding: 2rem 5rem;
     }
     .sections-links{
-        color: #fff;
+        color: var(--text-white);
         padding: 0;
         display: flex;
         flex-direction: column;
@@ -1067,7 +1101,6 @@ nav .fa-xmark, nav .fa-bars{
     /* contact - us section  */
     .contact-us-section{
         width: 100%;
-        background-color: rgb(231, 231, 231);
         padding: 2rem;
     }
     .contact-heading{
@@ -1106,7 +1139,7 @@ nav .fa-xmark, nav .fa-bars{
         padding: 1rem;
     }
     .sections-links{
-        color: #fff;
+        color: var(--text-white);
         padding: 0;
     }
     .sections-links a{
@@ -1117,10 +1150,10 @@ nav .fa-xmark, nav .fa-bars{
         width: 5px;
     }
     ::-webkit-scrollbar-track{
-        background-color: rgba(255, 255, 255, 0.183);
+        background-color: var(--sidebar-bg);
     }
     ::-webkit-scrollbar-thumb{
-        background-color: var(--bgOrange);
+        background-color: var(--bgSkyBlue);
         border-radius: 50px;
     }
 }
@@ -1145,6 +1178,6 @@ nav .fa-xmark, nav .fa-bars{
     width: 250px;
 }
 #pageloader h2{
-    color: var(--bgOrange);
+    color: var(--bgSkyBlue);
     font-size: 1.5rem;
 }
