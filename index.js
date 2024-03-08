@@ -46,6 +46,7 @@ modeBtn.addEventListener("click", function () {
 
 const modeText = document.querySelector('[data-mode-txt]');
 const modeIcon = document.querySelector('[data-mode-icon]');
+const blobLogo = document.querySelector('.blob-style');
 
 // dark mode default
 const prefersDarkMode = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -57,7 +58,8 @@ if (localStorage.getItem("dark-mode")) {
     } else {
         lightModeProperties();
     }
-} else {
+} 
+else {
     localStorage.setItem("dark-mode", prefersDarkMode);
     darkMode = prefersDarkMode;
     lightModeProperties(); // Assuming light mode is default
@@ -71,9 +73,12 @@ function darkModeProperties() {
     root.setProperty("--sidebar-bg", "#000");
     root.setProperty("--input-bg", "#777");
     root.setProperty("--input-text", "#fff");
-    root.setProperty("--input-text-ph", "#000");
+    root.setProperty("--input-text-ph", "#444");
     root.setProperty("--txt-color-2", "#366379");
-    modeText.textContent = "Light";
+    root.setProperty("--btn-shadow-color", "#8787873f");
+    root.setProperty("--project-card-shadow", "#8787873f");
+    blobLogo.style.opacity = 0.2;
+    modeText.textContent = "light";
     modeIcon.src = "./assets/light.svg";
     darkMode = true;
     localStorage.setItem("dark-mode", true);
@@ -89,7 +94,10 @@ function lightModeProperties() {
     root.setProperty("--input-text", "#222");
     root.setProperty("--input-text-ph", "#999");
     root.setProperty("--txt-color-2", "#343d68");
-    modeText.textContent = "Dark";
+    root.setProperty("--btn-shadow-color", "#0000003f");
+    root.setProperty("--project-card-shadow", "#1f1f1f");
+    blobLogo.style.opacity = 1;
+    modeText.textContent = "dark";
     modeIcon.src = "./assets/dark.svg";
     darkMode = false;
     localStorage.setItem("dark-mode", false);
