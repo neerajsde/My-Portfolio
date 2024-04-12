@@ -366,8 +366,8 @@ body{
     gap: 120px;
 }
 .project-card{
-    width: 90%;
-    height: 550px;
+    width: 80%;
+    height: 450px;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -425,7 +425,7 @@ body{
     flex-direction:column;
     color: var(--text-white);
     padding:2em;
-    bottom:20%;
+    bottom:5%;
     z-index:5;
     gap:1em;
     transition:all 0.4s;
@@ -1043,7 +1043,7 @@ nav .fa-xmark, nav .fa-bars{
     }
     .project-content{
         padding:1em;
-        bottom:10%;
+        bottom:0;
         gap:0.5em;
         align-items: left;
         justify-content: center;
