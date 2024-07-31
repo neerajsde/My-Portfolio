@@ -510,6 +510,12 @@ body{
     left: 10%;
     background-position: center;
 }
+#project5{
+    background: url(./images/projects/project5.png);
+    background-size: cover;
+    left: 10%;
+    background-position: center;
+}
 #project2 .project-content{
     margin-left: 30%;
 }
